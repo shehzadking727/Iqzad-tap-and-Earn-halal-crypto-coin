@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Iqzad Tap & Earn</title>
+<link rel="stylesheet" href="style.css"/>
+<script type="module" src="app.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header class="hdr">
+      <h1>Iqzad Tap & Earn</h1>
+      <div class="top-points">Points: <span id="points">0</span></div>
+    </header>
+
+    <!-- Google Login -->
+    <section id="auth-section">
+      <button id="loginBtn" class="btn">Sign in with Google</button>
+      <p id="userName"></p>
+    </section>
+
+    <!-- Game Section -->
+    <section id="game-section" class="hidden">
+      <div class="tap-area" id="tapBtn">
+        TAP TO EARN <br/><span class="small">+1 IQZ</span>
+      </div>
+      <div class="progress-wrap">
+        <div class="progress" id="progress"></div>
+      </div>
+      <p id="energyText">Energy: 0 / 2500</p>
+      <p id="timeLeft">Game Window: --</p>
+    </section>
+
+    <!-- Referral Section -->
+    <section id="referral-section" class="hidden">
+      <h2>Invite & Earn</h2>
+      <input type="text" id="refLink" readonly />
+      <button id="copyRef" class="btn smallbtn">Copy Link</button>
+      <p>Referrals: <span id="refCount">0</span></p>
+    </section>
+
+    <!-- Social Media Section -->
+    <section id="social-section" class="hidden">
+      <h2>Follow & Earn</h2>
+      <div id="socialButtons" class="socials"></div>
+      <button id="formBtn" class="btn smallbtn">Google Form (Get 100 pts)</button>
+    </section>
+
+    <!-- Withdrawal Section -->
+    <section id="withdraw-section" class="hidden">
+      <h2>Withdraw</h2>
+      <button id="withdrawBtn" class="btn withdraw-btn">Withdraw</button>
+      <p id="withdrawInfo" class="muted">
+        Withdrawals available after 15 days. Fee: $2 for liquidity.
+      </p>
+    </section>
+
+  </div>
+</body>
+</html>
